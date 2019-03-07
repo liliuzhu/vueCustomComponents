@@ -1,0 +1,37 @@
+{
+  "name": "anne2.2_formal",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "yarn serve",
+    "serve": "anne serve",
+    "build": "anne build",
+    "testing": "anne build --mode testing",
+    "lint": "anne lint",
+    "stylelint": "stylelint --fix scss/**/*.scss src/**/*.scss scss/**/*.vue",
+    "test:unit": "anne test",
+    "build:qiniu": "anne build --mode qiniu",
+    "jenkins:test": "yarn install && node ./scripts/jenkins/test.js",
+    "jenkins:build": "yarn install && node ./scripts/jenkins/build.js"
+  },
+  "dependencies": {
+    "@rrc-materials/core": "^0.2.0",
+    "@rrc-materials/sentry": "^0.2.0",
+    "@rrc/watermark": "^1.0.0"
+  },
+  "devDependencies": {
+    "@anejs/anne-cli": "^2.2.0",
+    "@anejs/anne-plugin-babel": "^2.2.0",
+    "@anejs/anne-plugin-css-global": "^2.2.0",
+    "@anejs/anne-plugin-eslint": "^2.2.0",
+    "@anejs/anne-plugin-jest": "^2.2.0",
+    "@anejs/anne-plugin-qiniu": "^2.2.0",
+    "@anejs/anne-plugin-sentry": "^2.2.0",
+    "@anejs/anne-plugin-stylelint": "^2.2.0",
+    "@anejs/anne-template-jenkins-scripts": "ssh:git@gitlab.renrenche.com:fe-template/jenkins-scripts.git",
+    "@anejs/anne-template-tibers": "^2.2.0",
+    "@vue/test-utils": "^1.0.0-beta.20",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "^23.0.1"
+  }
+}

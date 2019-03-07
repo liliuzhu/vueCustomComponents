@@ -1,0 +1,8 @@
+node_modules/*
+dist/*
+.anne/*
+**/dist/*
+**/node_modules/*
+**/.anne/*
+*.ts
+**/mock/*

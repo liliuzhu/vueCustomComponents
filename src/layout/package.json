@@ -1,0 +1,22 @@
+{
+  "name": "@rrc-materials/layout",
+  "version": "0.0.1-beta.7",
+  "description": "rrc materials for Layout",
+  "main": "./index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.renrenche.com/fe/rrc"
+  },
+  "keywords": [
+    "rrc",
+    "vue"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "xierenhong@renrenche.com",
+  "license": "ISC"
+}

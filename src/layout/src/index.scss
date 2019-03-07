@@ -1,0 +1,59 @@
+/* stylelint-disable */
+@font-face {
+  font-family: 'rrc-admin-font';  /* project id 499294 */
+  src: url('//at.alicdn.com/t/font_499294_th3stc211an.eot');
+  src: url('//at.alicdn.com/t/font_499294_th3stc211an.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_499294_th3stc211an.woff') format('woff'),
+  url('//at.alicdn.com/t/font_499294_th3stc211an.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_499294_th3stc211an.svg#rrc-admin-font') format('svg');
+}
+
+%rrc-icon {
+  font-family: 'rrc-admin-font' !important;
+  font-size: 16px;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: baseline;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* stylelint-enable */
+
+[class^="rc-icon-"],
+[class*=" rc-icon-"] {
+  @extend %rrc-icon;
+}
+
+.rc-icon {
+  @extend %rrc-icon;
+
+  /* 展开 */
+  &-un::before { content: "\e67c"; }
+  
+  /* 收起 */ 
+  &-packup::before { content: "\e60b"; }
+
+  &-msg::before { content: "\e609"; }
+
+  &-exit::before { content: "\e61c"; }
+
+  /* 账号 */
+  &-account::before { content: "\e617"; }
+
+  /* 密码 */
+  &-password::before { content: "\e60a"; }
+
+  /* 工具栏 */
+  &-tool::before { content: "\e601"; }
+
+  &-home::before { content: "\e65f"; }
+
+  &-fork::before { content: "\e656"; }
+
+  &-code::before { content: "\e69f"; }
+
+  &-codeopen::before { content: "\e88f"; }
+}

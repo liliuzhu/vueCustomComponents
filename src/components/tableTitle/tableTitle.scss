@@ -1,0 +1,54 @@
+$border: 1px solid #ebeef5;
+.table_title{
+    text-align: center;
+    .row_container{
+        display: table;
+        width: 100%;
+    }
+    .column_container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-right: $border;
+    }
+
+}
+.table_title_group{
+    display: table-row-group;
+    width: 100%;
+}
+.table_title_header{
+    display: table-row;
+    background: #666699;
+    color: #fff;
+}
+.table_title_body{
+    display: table-row;
+    .table_title_cell{
+        border-left: $border;
+        &:last-child{
+            border-right: $border;
+        }
+    }
+}
+.table_title_cell{
+    vertical-align: middle;
+    display: table-cell;
+    height: 3em;
+}
+
+.table_title_column{
+    .title{
+        background: #666699;
+        color: #fff;
+        height: 3em;
+        line-height: 3em;
+    }
+    .content{
+        height: 3em;
+        line-height: 3em;
+        border-left: $border;
+        border-bottom: $border;
+    }
+}
